@@ -1,0 +1,29 @@
+INFO    2021-09-17 10:05:43,917 [main] com.aspirations.project.aspirationsproject.base  - Text: $71.88 paid once yearly
+INFO    2021-09-17 10:05:44,003 [main] com.aspirations.project.aspirationsproject.base  - Text: $7.99 paid monthly
+INFO    2021-09-17 10:08:22,784 [main] com.aspirations.project.aspirationsproject.base  - $71.88 paid once yearly not showing
+INFO    2021-09-17 10:08:22,821 [main] com.aspirations.project.aspirationsproject.base  - $7.99 paid monthly
+INFO    2021-09-17 10:18:45,904 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-17 10:18:45,981 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-17 10:18:46,302 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-17 10:18:46,515 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-17 10:18:46,563 [main] com.aspirations.project.aspirationsproject.base  - $71.88 paid once yearly not showing
+INFO    2021-09-17 10:18:46,602 [main] com.aspirations.project.aspirationsproject.base  - $7.99 paid monthly
+INFO    2021-09-17 10:19:45,281 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-17 10:19:45,362 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-17 10:19:45,691 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-17 10:19:45,923 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-17 10:19:45,985 [main] com.aspirations.project.aspirationsproject.base  - $71.88 paid once yearly not showing
+INFO    2021-09-17 10:19:46,026 [main] com.aspirations.project.aspirationsproject.base  - Text: $7.99 paid monthly
+INFO    2021-09-17 10:21:10,536 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-17 10:21:10,611 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-17 10:21:11,184 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-17 10:21:11,394 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-17 10:21:11,498 [main] com.aspirations.project.aspirationsproject.base  - $71.88 paid once yearly not showing
+INFO    2021-09-17 10:21:11,592 [main] com.aspirations.project.aspirationsproject.base  - $7.99 paid monthly
+INFO    2021-09-17 10:24:37,725 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-17 10:24:37,814 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-17 10:24:38,146 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-17 10:24:38,388 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-17 10:24:38,450 [main] com.aspirations.project.aspirationsproject.base  - $7.99 paid monthly
+INFO    2021-09-17 10:24:51,907 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-17 10:24:52,187 [main] com.aspirations.project.aspirationsproject.base  - Text: $71.88 paid once yearly

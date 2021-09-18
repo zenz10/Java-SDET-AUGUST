@@ -1,14 +1,18 @@
 package com.aspirations.project.aspirationsproject;
 
 import java.util.List;
-
-import org.junit.Assert;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+
+
+
+
 public class aspirationstest extends base{
-	
+	private static Logger log = Logger.getLogger(base.class);
+
 	@Test
 	public static void main(String[] args) {
 			base aspirationProject = new base();
@@ -17,23 +21,29 @@ public class aspirationstest extends base{
 			aspirationProject.findProduct();
 			if (aspirationProject.inputField())
 			{
-				System.out.println("Input field works");
+				log.info("Input field works");
 			}
 			else
 			{
-				System.out.println("Input field does not work");
+				log.info("Input field does not work"); 
 			}
 			aspirationProject.closeinput();
-			
+		
 			if (aspirationProject.radiobutton())
 			{
-				System.out.println("Plan appears");
+				log.info("Plan appears");
 			}
 			else
 			{
-				System.out.println("Plan does not appear");
+				log.info("Plan does not appear");
 			}
-			aspirationProject.verifyPlan();
+			
+			aspirationProject.monthlyPayment();
+			aspirationProject.quit();
+		
+			aspirationProject.invokeBrowser();
+			aspirationProject.searchProduct();
+			aspirationProject.radiobutton();
+			aspirationProject.yearlyPayment();
 	}
-	
 }

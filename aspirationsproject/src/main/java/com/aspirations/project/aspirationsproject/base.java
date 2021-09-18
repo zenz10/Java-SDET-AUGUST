@@ -2,13 +2,19 @@ package com.aspirations.project.aspirationsproject;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
+import jdk.internal.org.jline.utils.Log;
+ 
 public class base {
+	private static Logger log = Logger.getLogger(base.class);
+	
 public WebDriver driver;
 	public WebDriver init() {
 		System.setProperty("webdriver.chrome.driver", "C://chromedriver//chromedriver.exe");
@@ -21,6 +27,7 @@ public WebDriver driver;
 	}
 	public void searchProduct()	{
 		driver.findElement(By.xpath("//a[@href='https://www.aspiration.com/our-products']")).click();
+		log.info("Spend and Save link works");
 	}
 
 	public void findProduct() {
@@ -30,11 +37,11 @@ public WebDriver driver;
 		b = driver.findElement(By.xpath("//div[@class='plan plan-a-plus']/div[2]/h2")).getText();
 		if(a.contains("Aspiration") && b.contains("Aspiration Plus"))
 		{
-			System.out.println("2 products can be seen");
+			log.info("2 products can be seen");
 		}
 		else
 		{
-			System.out.println("One or both products not seen");
+			log.info("One or both products not seen");
 		}
 	}
 	
@@ -53,12 +60,16 @@ public WebDriver driver;
 		return true;
 	}
 	
-	public void verifyPlan() {
-		String c = "";
-		String d = "";
-		c = driver.findElement(By.xpath("//div[@class='option selected']/p/b")).getText();
-		d = driver.findElement(By.xpath("//div[@class='option']/p/b")).getText();
+	/*	public void verifyPlan() {
+		WebElement element = driver.findElement(By.xpath("//div[@class='option selected']"));
+		WebElement element1 = driver.findElement(By.xpath("//div[@class='option']"));
+
+		String c = element.getText();
+		String d = element1.getText();
 		
+		System.out.println(c);
+		System.out.println(d);
+
 	if(c.contains("$71.88 paid once yearly") && d.contains("$7.99 paid monthly"))
 	{
 		System.out.println("Radio Option Correct");
@@ -68,4 +79,33 @@ public WebDriver driver;
 		System.out.println("One or both radio options not correct");
 	}
 }
+*/
+	public void yearlyPayment() {
+		WebElement element = driver.findElement(By.xpath("//div[@class='option selected']/p"));
+		String a = element.getText();
+		if(a.contains("$71.88 paid once yearly"))
+		{
+			log.info("Text: " + a);
+		}
+		else
+		{
+			log.info("$71.88 paid once yearly not showing");
+		}
+	}
+	
+	public void monthlyPayment() {
+		WebElement element = driver.findElement(By.xpath("//div[@class='option']/p"));
+		String a = element.getText();
+		if(a.contains("$7.99 paid monthly"))
+		{
+			log.info("Text: " + a);
+		}
+		else
+		{
+			log.info("$7.99 paid monthly");
+		}
+	}
+	public void quit() {
+		driver.quit();
+	}
 }
