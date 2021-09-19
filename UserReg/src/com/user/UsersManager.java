@@ -29,7 +29,7 @@ public class UsersManager {
 
 		int ch;
 		do {
-			System.out.println("1.Insert");
+			System.out.println("1.INSERT");
 			System.out.println("2.DISPLAY");
 			System.out.println("3.SEARCH");
 			System.out.println("4.DELETE");
@@ -167,7 +167,7 @@ public class UsersManager {
 					String username = result.getString("username");
 					String email = result.getString("email");
 					
-					System.out.println(userId + ":" + firstname + ", " + lastname + ", " + phonenumber + ", " + username + ", " + email);
+					System.out.println(userId + ": " + firstname + ", " + lastname + ", " + phonenumber + ", " + username + ", " + email);
 				}
 				
 				
@@ -200,7 +200,7 @@ public class UsersManager {
 					String username = result.getString("username");
 					String email = result.getString("email");
 					
-					System.out.println(userId + ":" + firstname + ", " + lastname + ", " + phonenumber + ", " + username + ", " + email);
+					System.out.println(userId + ": " + firstname + ", " + lastname + ", " + phonenumber + ", " + username + ", " + email);
 				}
 
 				connection.close();
@@ -236,55 +236,113 @@ public class UsersManager {
 				System.out.println("------------------------------------------");
 				break;
 			case 5:
-				/*
-				String firstname = "";
-				String lastname = "";
-				String phonenumber = "";
-				String username = "";
-				String email = "";
-				
-				System.out.print("Enter firstname to update: ");
+				String user_ID ="";
+				System.out.print("Enter UserID to update: ");
 				Scanner fupdate = new Scanner(System.in);
-				firstname = fupdate.nextLine();
-				System.out.print("Enter new last name: ");
-				lastname = fupdate.nextLine();
-				System.out.print("Enter new phonenumber: ");
-				phonenumber = fupdate.nextLine();
-				System.out.print("Enter new username: ");
-				username = fupdate.nextLine();
-				System.out.print("Enter new email address: ");
-				email = fupdate.nextLine();
-				System.out.println("------------------------------------------");
+				user_ID = fupdate.nextLine();
+				
+				System.out.print("Enter First Name: ");
+				int fn1 = 0;
+				String firstname4 = "";
+				do {
+					Scanner FName = new Scanner(System.in);
+					firstname4 = FName.nextLine();
+					if (validateFirstName(firstname4))
+					{
+						fn1 = 1;
+					}
+					else
+					{
+						System.out.print("Invalid first name re-enter: ");
+					}
+				}while (fn1 ==0);
+
+				
+			    System.out.print("Enter Last Name: ");
+				int ln1 = 0;
+				String lastname4 = "";
+				do {
+					Scanner LName = new Scanner(System.in);
+					lastname4 = LName.nextLine();
+					if (validateFirstName(lastname4))
+					{
+						ln1 = 1;
+					}
+					else
+					{
+						System.out.print("Invalid last name re-enter: ");
+					}
+				}while (ln1 ==0);
+				
+			    System.out.print("Enter Phone Number: ");
+				int ph1 = 0;
+			    String phonenumber4 = "";
+				do {
+					Scanner pNum = new Scanner(System.in);
+					phonenumber4 = pNum.nextLine();
+					if (validatephone(phonenumber4))
+					{
+						ph1 = 1;
+					}
+					else
+					{
+						System.out.print("Invalid phone number re-enter: ");
+					}
+				}while (ph1 ==0);
+				
+			    System.out.print("Enter Username: ");
+			    String username4 = "";
+				int us1 = 0;
+				do {
+					Scanner uName = new Scanner(System.in);
+					username4 = uName.nextLine();
+					if (validateuname(username4))
+					{
+						us1 = 1;
+					}
+					else
+					{
+						System.out.print("Invalid user name re-enter: ");
+					}
+				}while (us1 ==0);
+				
+			    System.out.print("Enter Email Address: ");
+			    String email4 = "";
+				int a1 = 0;
+			    do {
+			    	Scanner inemail = new Scanner(System.in);
+			    	email4 = inemail.nextLine();   
+			    	if (isValid(email4))
+			    	{
+			    		a1=1;
+			    	}
+			    	else
+			    	{
+			    		System.out.print("Invalid email re-enter email: ");
+			    	}
+			    } while (a1 ==0);
 				
 				try {
 					Connection connection = DriverManager.getConnection(jdbcURL, dbusername, dbpassword);
-	
-				String sql = "UPDATE users SET lastname=" + lastname + ", phonenumber=" + phonenumber + ", username=" + username + ", email=" + email + "where firstname="	+ firstname;
+				String sql = "UPDATE users SET firstname=?, lastname=?, phonenumber=?, username=?, email=? where user_ID=?";
 				PreparedStatement statement = connection.prepareStatement(sql);
 				
-				statement.setString(1, firstname);
-				statement.setString(2, lastname);
-				statement.setString(3, phonenumber);
-				statement.setString(4, username);
-				statement.setString(5, email);
+				statement.setString(1, firstname4);
+				statement.setString(2, lastname4);
+				statement.setString(3, phonenumber4);
+				statement.setString(4, username4);
+				statement.setString(5, email4);
+				statement.setString(6, user_ID);
+				statement.executeUpdate();
 
-				
-				int rows = statement.executeUpdate();
-				
-				if (rows > 0) {
-					System.out.println("The user's infromation has been deleted.");
-				}
 				connection.close();
 				}catch (SQLException ex) {
 					ex.printStackTrace();
 				}
 
-*/
-				System.out.println("Working on it..");
+				System.out.println("The User's information has been Updated.");
 				System.out.println("------------------------------------------");
 				break;
-				
-
 			}
 		}while(ch!=0);
 	}
