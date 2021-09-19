@@ -39,12 +39,5 @@ public class UserArray {
 		public String toString() {
 			return fname+" "+lname+" "+pnumber+" "+eaddress+" "+uname;
 		}
-		
-		
-	public static void main(String[] args) {
-
-
-
-	}
 
 }
