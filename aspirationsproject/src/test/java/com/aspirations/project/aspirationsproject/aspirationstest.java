@@ -37,13 +37,8 @@ public class aspirationstest extends base{
 			{
 				log.info("Plan does not appear");
 			}
-			
-			aspirationProject.monthlyPayment();
+			aspirationProject.wait10();
+			aspirationProject.verifyPlan();
 			aspirationProject.quit();
-		
-			aspirationProject.invokeBrowser();
-			aspirationProject.searchProduct();
-			aspirationProject.radiobutton();
-			aspirationProject.yearlyPayment();
 	}
 }

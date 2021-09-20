@@ -27,3 +27,77 @@ INFO    2021-09-17 10:24:38,388 [main] com.aspirations.project.aspirationsprojec
 INFO    2021-09-17 10:24:38,450 [main] com.aspirations.project.aspirationsproject.base  - $7.99 paid monthly
 INFO    2021-09-17 10:24:51,907 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
 INFO    2021-09-17 10:24:52,187 [main] com.aspirations.project.aspirationsproject.base  - Text: $71.88 paid once yearly
+INFO    2021-09-19 21:00:10,259 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:00:10,324 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:00:10,523 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:00:10,719 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:00:10,799 [main] com.aspirations.project.aspirationsproject.base  - $7.99 paid monthly
+INFO    2021-09-19 21:00:24,833 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:00:25,039 [main] com.aspirations.project.aspirationsproject.base  - $71.88 paid once yearly not showing
+INFO    2021-09-19 21:05:22,928 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:05:22,992 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:05:23,267 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:05:23,457 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:05:23,618 [main] com.aspirations.project.aspirationsproject.base  - Text: $7.99 paid monthly
+INFO    2021-09-19 21:05:35,825 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:05:36,038 [main] com.aspirations.project.aspirationsproject.base  - Text: $71.88 paid once yearly
+INFO    2021-09-19 21:09:05,537 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:09:05,599 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:09:05,811 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:09:06,000 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:09:06,198 [main] com.aspirations.project.aspirationsproject.base  - One or both radio options not correct
+INFO    2021-09-19 21:11:37,056 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:11:37,119 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:11:37,385 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:11:37,571 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:11:37,710 [main] com.aspirations.project.aspirationsproject.base  - One or both radio options not correct
+INFO    2021-09-19 21:12:58,219 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:12:58,282 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:12:58,520 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:12:58,749 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:12:58,890 [main] com.aspirations.project.aspirationsproject.base  - Radio Options Correct
+INFO    2021-09-19 21:14:25,818 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:14:25,876 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:14:26,106 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:14:26,326 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:14:26,468 [main] com.aspirations.project.aspirationsproject.base  - Radio Options Correct
+INFO    2021-09-19 21:15:24,668 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:15:24,730 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:15:24,962 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:15:25,176 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:15:25,316 [main] com.aspirations.project.aspirationsproject.base  - Radio Options Correct
+INFO    2021-09-19 21:16:37,416 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:16:37,472 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:16:37,699 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:16:37,940 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:16:38,087 [main] com.aspirations.project.aspirationsproject.base  - One or both radio options not correct
+INFO    2021-09-19 21:17:57,460 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:17:57,521 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:17:57,752 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:17:57,985 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:17:58,124 [main] com.aspirations.project.aspirationsproject.base  - One or both radio options not correct
+INFO    2021-09-19 21:21:33,891 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:21:33,961 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:21:34,253 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:21:34,523 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:21:34,700 [main] com.aspirations.project.aspirationsproject.base  - Radio Options Correct
+INFO    2021-09-19 21:22:34,197 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:22:34,281 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:22:34,611 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:22:34,847 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:22:35,025 [main] com.aspirations.project.aspirationsproject.base  - Radio Options Correct
+INFO    2021-09-19 21:22:52,324 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:22:52,399 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:22:52,713 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:22:52,933 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:22:53,089 [main] com.aspirations.project.aspirationsproject.base  - Radio Options Correct
+INFO    2021-09-19 21:23:13,532 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:23:13,594 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:23:13,861 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:23:14,124 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:23:14,308 [main] com.aspirations.project.aspirationsproject.base  - Radio Options Correct
+INFO    2021-09-19 21:23:32,014 [main] com.aspirations.project.aspirationsproject.base  - Spend and Save link works
+INFO    2021-09-19 21:23:32,077 [main] com.aspirations.project.aspirationsproject.base  - 2 products can be seen
+INFO    2021-09-19 21:23:32,306 [main] com.aspirations.project.aspirationsproject.base  - Input field works
+INFO    2021-09-19 21:23:32,543 [main] com.aspirations.project.aspirationsproject.base  - Plan appears
+INFO    2021-09-19 21:23:32,686 [main] com.aspirations.project.aspirationsproject.base  - Radio Options Correct

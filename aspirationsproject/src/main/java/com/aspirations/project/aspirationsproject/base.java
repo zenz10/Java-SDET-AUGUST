@@ -9,7 +9,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import jdk.internal.org.jline.utils.Log;
  
 public class base {
@@ -60,7 +63,41 @@ public WebDriver driver;
 		return true;
 	}
 	
+	public void wait10() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	public void verifyPlan() {
+		  
+		 WebDriverWait wait = new WebDriverWait(driver, 10);
+			 WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='option selected']")));
+			 WebElement element1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='option']")));
+
+			String c = element.getText();
+			String d = element1.getText();
+
+		if(c.contains("$71.88 paid once yearly") && d.contains("$7.99 paid monthly"))
+		{
+			log.info("Radio Options Correct");
+		}
+		else
+		{
+			log.info("One or both radio options not correct");
+		}
+	}
+		public void quit() {
+			driver.quit();
+		}
+	}
+		
+	
 	/*	public void verifyPlan() {
+	 * 
+	 * WebDriverWait wait = new WebDriverWait(driver, 10);
+		  WebElement wait = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='Col-favj32-0 sc-jSgupP jkeqlL eVYAHa']/div/ul/li/div/div/div/div/div/div/div/div[@class='h-display-flex']/a")));
+
+	 * 
+	 * 
 		WebElement element = driver.findElement(By.xpath("//div[@class='option selected']"));
 		WebElement element1 = driver.findElement(By.xpath("//div[@class='option']"));
 
@@ -80,32 +117,33 @@ public WebDriver driver;
 	}
 }
 */
-	public void yearlyPayment() {
-		WebElement element = driver.findElement(By.xpath("//div[@class='option selected']/p"));
-		String a = element.getText();
-		if(a.contains("$71.88 paid once yearly"))
-		{
-			log.info("Text: " + a);
-		}
-		else
-		{
-			log.info("$71.88 paid once yearly not showing");
-		}
-	}
 	
-	public void monthlyPayment() {
-		WebElement element = driver.findElement(By.xpath("//div[@class='option']/p"));
-		String a = element.getText();
-		if(a.contains("$7.99 paid monthly"))
-		{
-			log.info("Text: " + a);
-		}
-		else
-		{
-			log.info("$7.99 paid monthly");
-		}
-	}
-	public void quit() {
-		driver.quit();
-	}
-}
+
+	
+//	public void yearlyPayment() {
+//		WebElement element = driver.findElement(By.xpath("//div[@class='option selected']/p"));
+//		String a = element.getText();
+//		if(a.contains("$71.88 paid once yearly"))
+//		{
+//			log.info("Text: " + a);
+//		}
+//		else
+//		{
+//			log.info("$71.88 paid once yearly not showing");
+//		}
+//	}
+	
+//	public void monthlyPayment() {
+//		WebElement element = driver.findElement(By.xpath("//div[@class='option']/p"));
+//		String a = element.getText();
+//		if(a.contains("$7.99 paid monthly"))
+//		{
+//			log.info("Text: " + a);
+//		}
+//		else
+//		{
+//			log.info("$7.99 paid monthly");
+//		}
+//	}
+	
+
