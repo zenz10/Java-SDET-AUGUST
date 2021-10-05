@@ -1,5 +1,7 @@
 package pageEvents;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,6 +13,8 @@ import test.BaseTest;
 import utils.ElementFetch;
 
 public class ProductsPageEvents {
+	
+	private static Logger logger = LogManager.getLogger(ProductsPageEvents.class);
 	WebDriverWait wait = new WebDriverWait(BaseTest.driver,30);
 	
 //	Verify that you see 2 card products, Aspiration and Aspiration Plus
@@ -21,18 +25,22 @@ public class ProductsPageEvents {
 		if(aspOrig.contains("Aspiration") && aspPlus.contains("Aspiration Plus"))
 		{
 			BaseTest.logger.info("Aspiration and Aspiration Plus seen");
+			logger.info("Aspiration and Aspiration Plus seen: " + aspOrig + " and " +aspPlus);
 		}
 		else if(aspOrig.contains("Aspiration"))
 		{
 			BaseTest.logger.info("Only Aspiration Seen");
+			logger.info("Only Aspiration Seen");
 		}
 		else if(aspPlus.contains("Aspiration Plus"))
 		{
 			BaseTest.logger.info("Only Aspiration Plus Seen");
+			logger.info("Only Aspiration Plus Seen");
 		}
 		else
 		{
 			BaseTest.logger.info("Aspiration and Aspiration Plus not seen");
+			logger.info("Aspiration and Aspiration Plus not seen");
 		}
 	}
 	
@@ -40,6 +48,7 @@ public class ProductsPageEvents {
 	public void clickGetAspirationFillInput() {
 		ElementFetch elementFetch = new ElementFetch();
 		BaseTest.logger.info("Clicking Get Aspiration and checking input field");
+		logger.info("Clicking Get Aspiration and checking input field");
 		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationButton).click();
 		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationTextbox).sendKeys("InputTest");
 	}
@@ -47,12 +56,14 @@ public class ProductsPageEvents {
 	public void exitGetAspirationPopup() {
 		ElementFetch elementFetch = new ElementFetch();
 		BaseTest.logger.info("Exiting Get Aspiration Popup");
+		logger.info("Exiting Get Aspiration Popup");
 		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationPopupExitButton).click();
 	}
 //	Verify that when you click Get Aspiration Plus - A modal with monthly and yearly plans appears
 	public void clickGetAspirationPlus() {
 		ElementFetch elementFetch = new ElementFetch();
 		BaseTest.logger.info("Clicking Get Aspiration Plus");
+		logger.info("Clicking Get Aspiration Plus");
 		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationPlusButton).click();
 	}
 	
@@ -66,18 +77,22 @@ public class ProductsPageEvents {
 		if(yearlytext.contains("$71.88 paid once yearly") && monthlytext.contains("$7.99 paid monthly"))
 		{
 			BaseTest.logger.info("Yearly and Monthly radio option verified");
+			logger.info("Yearly and Monthly radio option verified: " + yearlytext + " and " + monthlytext);
 		}
 		else if(yearlytext.contains("$71.88 paid once yearly"))
 		{
 			BaseTest.logger.info("Only yearly text seen");
+			logger.info("Only yearly text seen");
 		}
 		else if(monthlytext.contains("$7.99 paid monthly"))
 		{
 			BaseTest.logger.info("Only monthly text seen");
+			logger.info("Only monthly text seen");
 		}
 		else
 		{
 			BaseTest.logger.info("Yearly and Monthly radio option not verified");
+			logger.info("Yearly and Monthly radio option not verified");
 		}
 	}
 }

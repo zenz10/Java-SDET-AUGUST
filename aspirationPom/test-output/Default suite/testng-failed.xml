@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.SampleTest">
+      <class name="test.BaseTest">
         <methods>
           <include name="afterTestMethod"/>
           <include name="beforeMethodMethod"/>
-          <include name="sampleMethodForAspirationTest"/>
           <include name="beforeTestMethod"/>
           <include name="afterMethodMethod"/>
+          <include name="aspirationTestmethod"/>
         </methods>
-      </class> <!-- test.SampleTest -->
+      </class> <!-- test.BaseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
