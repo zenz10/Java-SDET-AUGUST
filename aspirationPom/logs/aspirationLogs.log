@@ -7,3 +7,21 @@
 [INFO ] 2021-10-05 13:23:10.000 [main] ProductsPageEvents - Exiting Get Aspiration Popup
 [INFO ] 2021-10-05 13:23:10.104 [main] ProductsPageEvents - Clicking Get Aspiration Plus
 [INFO ] 2021-10-05 13:23:10.312 [main] ProductsPageEvents - Yearly and Monthly radio option verified: $71.88 paid once yearlyand$7.99 paid monthly
+[INFO ] 2021-10-05 13:44:59.193 [main] HomePageEvents - Clicking on Spend & Save
+[INFO ] 2021-10-05 13:45:02.705 [main] ProductsPageEvents - Aspiration and Aspiration Plus seen: Aspiration and Aspiration Plus
+[INFO ] 2021-10-05 13:45:02.705 [main] ProductsPageEvents - Clicking Get Aspiration and checking input field
+[INFO ] 2021-10-05 13:45:03.016 [main] ProductsPageEvents - Exiting Get Aspiration Popup
+[INFO ] 2021-10-05 13:45:03.114 [main] ProductsPageEvents - Clicking Get Aspiration Plus
+[INFO ] 2021-10-05 13:45:03.319 [main] ProductsPageEvents - Yearly and Monthly radio option verified: $71.88 paid once yearly and $7.99 paid monthly
+[INFO ] 2021-10-05 14:40:30.773 [main] HomePageEvents - Clicking on Spend & Save
+[INFO ] 2021-10-05 14:40:33.654 [main] ProductsPageEvents - Aspiration and Aspiration Plus seen: Aspiration and Aspiration Plus
+[INFO ] 2021-10-05 14:40:33.654 [main] ProductsPageEvents - Clicking Get Aspiration and checking input field
+[INFO ] 2021-10-05 14:40:33.958 [main] ProductsPageEvents - Exiting Get Aspiration Popup
+[INFO ] 2021-10-05 14:40:34.050 [main] ProductsPageEvents - Clicking Get Aspiration Plus
+[INFO ] 2021-10-05 14:40:34.257 [main] ProductsPageEvents - Yearly and Monthly radio option verified: $71.88 paid once yearly and $7.99 paid monthly
+[INFO ] 2021-10-05 02:43:41.606 [main] HomePageEvents - Clicking on Spend & Save
+[INFO ] 2021-10-05 02:43:43.976 [main] ProductsPageEvents - Aspiration and Aspiration Plus seen: Aspiration and Aspiration Plus
+[INFO ] 2021-10-05 02:43:43.976 [main] ProductsPageEvents - Clicking Get Aspiration and checking input field
+[INFO ] 2021-10-05 02:43:44.260 [main] ProductsPageEvents - Exiting Get Aspiration Popup
+[INFO ] 2021-10-05 02:43:44.394 [main] ProductsPageEvents - Clicking Get Aspiration Plus
+[INFO ] 2021-10-05 02:43:44.609 [main] ProductsPageEvents - Yearly and Monthly radio option verified: $71.88 paid once yearly and $7.99 paid monthly

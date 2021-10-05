@@ -25,17 +25,13 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import mainutils.SetupDriver;
 import pageEvents.HomePageEvents;
 import pageEvents.ProductsPageEvents;
 import utils.Constants;
 
-public class BaseTest {
+public class BaseTest extends SetupDriver{
 
-	public static WebDriver driver;
-	public ExtentSparkReporter htmlReporter;
-	public static ExtentReports extent;
-	public static ExtentTest logger;
-	
 	@BeforeTest
 	public void beforeTestMethod() {
 		htmlReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ File.separator + "reports" + File.separator + "AutomationReport.html");
@@ -64,7 +60,7 @@ public class BaseTest {
 		homePageEvents.clickOnSpendSave();
 		
 		ProductsPageEvents productsPageEvents = new ProductsPageEvents();
-		productsPageEvents.findProducts();
+		productsPageEvents.findProducts("Aspiration", "Aspiration Plus");
 		productsPageEvents.clickGetAspirationFillInput();
 		productsPageEvents.exitGetAspirationPopup();
 		productsPageEvents.clickGetAspirationPlus();
@@ -98,30 +94,5 @@ public class BaseTest {
 	@AfterTest
 	public void afterTestMethod() {
 		extent.flush();
-	}
-	
-	public void setupDriver(String browserName) {
-		//uses driver manager
-		if(browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-		}else if(browserName.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-		}else {
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-		}
-//		using local exe files
-//		if(browserName.equalsIgnoreCase("chrome")) {
-//			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver" + File.separator + "chromedriver_win32.exe");
-//			driver = new ChromeDriver();
-//		}else if(browserName.equalsIgnoreCase("firefox")) {
-//			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "geckodriver" + File.separator + "geckodriver_win64.exe");
-//			driver = new FirefoxDriver();
-//		}else {
-//			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "msedgedriver" + File.separator + "msedgedriver_win32.exe");
-//			driver = new EdgeDriver();
-//		}
 	}
 }
