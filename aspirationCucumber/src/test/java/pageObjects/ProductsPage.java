@@ -28,38 +28,14 @@ public class ProductsPage {
 		PageFactory.initElements(new AjaxElementLocatorFactory(driver,30), this);
 	}
 	
-	@FindBy(xpath="//div[@class='plan plan-original']/div[2]/h2")
-	@CacheLookup
-	WebElement aspirationText;
-	
-	@FindBy(xpath="//div[@class='plan plan-a-plus']/div[2]/h2")
-	@CacheLookup
-	WebElement aspirationPlusText;
-
-	@FindBy(xpath="//div[@class='plan plan-original']/div[@class='plan-content']/button[@class='btn btn-v3 btn--blue ng-binding']")
-	@CacheLookup
-	WebElement getAspirationButton;
-	
-	@FindBy(xpath="//div[@class='inside-form']/div/div/input")
-	@CacheLookup
-	WebElement getAspirationTextbox;
-	
-	@FindBy(xpath="//div[@class='jwt-modal ng-scope']/button")
-	@CacheLookup
-	WebElement getAspirationPopupExitButton;
-	
-	@FindBy(xpath="//div[@class='plan plan-a-plus']/div[@class='plan-content']/button[@class='btn btn-v3 btn--blue ng-binding']")
-	@CacheLookup
-	WebElement getAspirationPlusButton;
-	
-	@FindBy(xpath="/html/body/div[1]/div/div/div/div[2]/div[1]/p")
-	@CacheLookup
-	WebElement yearlyText;
-	
-	@FindBy(xpath="/html/body/div[1]/div/div/div/div[2]/div[2]/p")
-	@CacheLookup
-	WebElement monthlyText;
-	
+	@FindBy(xpath="//div[@class='plan plan-original']/div[2]/h2")	WebElement aspirationText;
+	@FindBy(xpath="//div[@class='plan plan-a-plus']/div[2]/h2")	WebElement aspirationPlusText;
+	@FindBy(xpath="//div[@class='plan plan-original']/div[@class='plan-content']/button[@class='btn btn-v3 btn--blue ng-binding']")	WebElement getAspirationButton;
+	@FindBy(xpath="//div[@class='inside-form']/div/div/input")	WebElement getAspirationTextbox;
+	@FindBy(xpath="//div[@class='jwt-modal ng-scope']/button")	WebElement getAspirationPopupExitButton;
+	@FindBy(xpath="//div[@class='plan plan-a-plus']/div[@class='plan-content']/button[@class='btn btn-v3 btn--blue ng-binding']")	WebElement getAspirationPlusButton;
+	@FindBy(xpath="/html/body/div[1]/div/div/div/div[2]/div[1]/p")	WebElement yearlyText;
+	@FindBy(xpath="/html/body/div[1]/div/div/div/div[2]/div[2]/p")	WebElement monthlyText;
 	
 	public void findProducts(String product1, String product2) {
 		String aspOrig = aspirationText.getText();

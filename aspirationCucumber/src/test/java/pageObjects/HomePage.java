@@ -23,8 +23,7 @@ public class HomePage {
 		PageFactory.initElements(new AjaxElementLocatorFactory(driver,30), this);
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div/header/ul[1]/li[1]/a")
-	WebElement spendSaveButton;
+	@FindBy(xpath="//*[@id=\"__next\"]/div/header/ul[1]/li[1]/a")	WebElement spendSaveButton;
 	
 	public void clickOnSpendSave() {
 		spendSaveButton.click();
