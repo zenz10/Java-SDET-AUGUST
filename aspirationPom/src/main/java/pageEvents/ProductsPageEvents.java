@@ -15,14 +15,14 @@ import pageObjects.ProductsPageElements;
 public class ProductsPageEvents extends SetupDriver{
 	
 	private static Logger loggerj = LogManager.getLogger(ProductsPageEvents.class);
-	WebDriverWait wait = new WebDriverWait(SetupDriver.driver,30);
-	
+	public static WebDriverWait wait = new WebDriverWait(SetupDriver.driver,30);
+
 //	Verify that you see 2 card products, Aspiration and Aspiration Plus
-	public void findProducts(String name1, String name2) {
+	public void findProducts(String product1, String product2) {
 		ElementFetch elementFetch = new ElementFetch();
 		String aspOrig = elementFetch.getWebElement("XPATH", ProductsPageElements.aspirationText).getText();
 		String aspPlus = elementFetch.getWebElement("XPATH", ProductsPageElements.aspirationPlusText).getText();
-		if(aspOrig.contains(name1) && aspPlus.contains(name2))
+		if(aspOrig.contains(product1) && aspPlus.contains(product2))
 		{
 			logger.info("Aspiration and Aspiration Plus seen");
 			loggerj.info("Aspiration and Aspiration Plus seen: " + aspOrig + " and " +aspPlus);
@@ -45,46 +45,46 @@ public class ProductsPageEvents extends SetupDriver{
 	}
 	
 //	Verify that when you click Get Aspiration - A modal containing an input field for an email address to sign up appears
-	public void clickGetAspirationFillInput() {
+	public void clickGetAspirationFillInput(String email) {
 		ElementFetch elementFetch = new ElementFetch();
+		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationButton).click();
+		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationTextbox).sendKeys(email);
 		logger.info("Clicking Get Aspiration and checking input field");
 		loggerj.info("Clicking Get Aspiration and checking input field");
-		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationButton).click();
-		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationTextbox).sendKeys("InputTest");
 	}
 	
 	public void exitGetAspirationPopup() {
 		ElementFetch elementFetch = new ElementFetch();
+		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationPopupExitButton).click();
 		logger.info("Exiting Get Aspiration Popup");
 		loggerj.info("Exiting Get Aspiration Popup");
-		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationPopupExitButton).click();
 	}
 //	Verify that when you click Get Aspiration Plus - A modal with monthly and yearly plans appears
 	public void clickGetAspirationPlus() {
 		ElementFetch elementFetch = new ElementFetch();
+		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationPlusButton).click();
 		logger.info("Clicking Get Aspiration Plus");
 		loggerj.info("Clicking Get Aspiration Plus");
-		elementFetch.getWebElement("XPATH", ProductsPageElements.getAspirationPlusButton).click();
 	}
 	
 //	Verify that yearly radio option is $71.88 paid once yearly and that monthly radio option is $7.99 paid monthly
-	public void VerifyYearlyAndMonthlyPlan() {
+	public void VerifyYearlyAndMonthlyPlan(String yearlyprice, String monthlyprice) {
 		ElementFetch elementFetch = new ElementFetch();
 		WebElement yearly = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductsPageElements.yearlyText)));
 		WebElement monthly = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ProductsPageElements.monthyText)));
 		String yearlytext = yearly.getText();
 		String monthlytext = monthly.getText();
-		if(yearlytext.contains("$71.88 paid once yearly") && monthlytext.contains("$7.99 paid monthly"))
+		if(yearlytext.contains(yearlyprice) && monthlytext.contains(monthlyprice))
 		{
 			logger.info("Yearly and Monthly radio option verified");
 			loggerj.info("Yearly and Monthly radio option verified: " + yearlytext + " and " + monthlytext);
 		}
-		else if(yearlytext.contains("$71.88 paid once yearly"))
+		else if(yearlytext.contains(yearlyprice))
 		{
 			logger.info("Only yearly text seen");
 			loggerj.info("Only yearly text seen");
 		}
-		else if(monthlytext.contains("$7.99 paid monthly"))
+		else if(monthlytext.contains(monthlyprice))
 		{
 			logger.info("Only monthly text seen");
 			loggerj.info("Only monthly text seen");

@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+//returns element based on type
 public class ElementFetch {
 	public WebElement getWebElement(String identifierType, String identifierValue) {
 		switch(identifierType) {

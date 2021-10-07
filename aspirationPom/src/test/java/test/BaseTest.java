@@ -32,6 +32,7 @@ import utils.Constants;
 
 public class BaseTest extends SetupDriver{
 
+	//initializes extent report
 	@BeforeTest
 	public void beforeTestMethod() {
 		htmlReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ File.separator + "reports" + File.separator + "AutomationReport.html");
@@ -61,12 +62,13 @@ public class BaseTest extends SetupDriver{
 		
 		ProductsPageEvents productsPageEvents = new ProductsPageEvents();
 		productsPageEvents.findProducts("Aspiration", "Aspiration Plus");
-		productsPageEvents.clickGetAspirationFillInput();
+		productsPageEvents.clickGetAspirationFillInput("inputcheck");
 		productsPageEvents.exitGetAspirationPopup();
 		productsPageEvents.clickGetAspirationPlus();
-		productsPageEvents.VerifyYearlyAndMonthlyPlan();
+		productsPageEvents.VerifyYearlyAndMonthlyPlan("$71.88 paid once yearly", "$7.99 paid monthly");
 	}
 	
+	//extent report result setup
 	@AfterMethod
 	public void afterMethodMethod(ITestResult result) {
 		if(result.getStatus()==ITestResult.SUCCESS) {

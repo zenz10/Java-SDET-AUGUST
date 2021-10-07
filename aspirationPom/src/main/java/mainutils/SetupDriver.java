@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -17,7 +18,7 @@ public class SetupDriver {
 	public ExtentSparkReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest logger;
-	
+
 	public void setupDriver(String browserName) {
 		//uses driver manager
 		if(browserName.equalsIgnoreCase("chrome")) {

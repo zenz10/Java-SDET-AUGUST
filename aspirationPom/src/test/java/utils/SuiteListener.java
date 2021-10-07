@@ -16,6 +16,7 @@ import org.testng.annotations.ITestAnnotation;
 
 import test.BaseTest;
 
+//screenshot setup
 public class SuiteListener implements ITestListener, IAnnotationTransformer{
 
 

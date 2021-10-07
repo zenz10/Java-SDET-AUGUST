@@ -3,6 +3,7 @@ package utils;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
+//retrys testcase 
 public class RetryAnalyser implements IRetryAnalyzer{
 
 	int count =0;

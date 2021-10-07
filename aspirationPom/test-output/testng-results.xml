@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-05T14:43:29 EDT" name="Suite" finished-at="2021-10-05T14:43:45 EDT" duration-ms="16567">
+  <suite started-at="2021-10-06T17:46:50 EDT" name="Suite" finished-at="2021-10-06T17:47:14 EDT" duration-ms="24265">
     <groups>
     </groups>
-    <test started-at="2021-10-05T14:43:29 EDT" name="Test" finished-at="2021-10-05T14:43:45 EDT" duration-ms="16567">
+    <test started-at="2021-10-06T17:46:50 EDT" name="Test" finished-at="2021-10-06T17:47:14 EDT" duration-ms="24265">
       <class name="test.BaseTest">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-05T14:43:29 EDT" name="beforeTestMethod" finished-at="2021-10-05T14:43:29 EDT" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-06T17:46:50 EDT" name="beforeTestMethod" finished-at="2021-10-06T17:46:50 EDT" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-05T14:43:29 EDT" name="beforeMethodMethod" finished-at="2021-10-05T14:43:41 EDT" duration-ms="11959" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-06T17:46:50 EDT" name="beforeMethodMethod" finished-at="2021-10-06T17:47:09 EDT" duration-ms="18611" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="aspirationTestmethod()[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-05T14:43:41 EDT" name="aspirationTestmethod" finished-at="2021-10-05T14:43:44 EDT" duration-ms="3412" status="PASS">
+        <test-method signature="aspirationTestmethod()[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-06T17:47:09 EDT" name="aspirationTestmethod" finished-at="2021-10-06T17:47:13 EDT" duration-ms="4317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aspirationTestmethod -->
-        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-05T14:43:44 EDT" name="afterMethodMethod" finished-at="2021-10-05T14:43:45 EDT" duration-ms="700" status="PASS">
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-06T17:47:13 EDT" name="afterMethodMethod" finished-at="2021-10-06T17:47:14 EDT" duration-ms="739" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-05T14:43:45 EDT" name="afterTestMethod" finished-at="2021-10-05T14:43:45 EDT" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:test.BaseTest@31368b99]" started-at="2021-10-06T17:47:14 EDT" name="afterTestMethod" finished-at="2021-10-06T17:47:14 EDT" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
